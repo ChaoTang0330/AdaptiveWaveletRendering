@@ -96,9 +96,9 @@ static void saveRawData(
 
         for (size_t i = 1; i < it->size(); i++)
         {
-            rawFile << std::fixed << ", " << it->at(0).x << ", ";
-            rawFile << std::fixed << it->at(0).y << ", ";
-            rawFile << std::fixed << it->at(0).z;
+            rawFile << std::fixed << ", " << it->at(i).x << ", ";
+            rawFile << std::fixed << it->at(i).y << ", ";
+            rawFile << std::fixed << it->at(i).z;
         }
 
         rawFile << std::endl;
