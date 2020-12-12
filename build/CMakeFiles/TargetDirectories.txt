@@ -1,0 +1,5 @@
+C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/build/CMakeFiles/AWR_lib.dir
+C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/build/CMakeFiles/AWR_win.dir
+C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/build/CMakeFiles/AWR_cli.dir
+C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/build/CMakeFiles/ZERO_CHECK.dir

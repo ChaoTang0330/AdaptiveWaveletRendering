@@ -1,0 +1,142 @@
+﻿  Building Custom Rule C:/Users/唐潮/source/repos/ChaoTang0330/AdaptiveWaveletRendering/CMakeLists.txt
+  Engine.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.h(40,40): warning C4305: “初始化”: 从“double”到“const float”截断
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.h(41,36): warning C4305: “初始化”: 从“double”到“const float”截断
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(44,17): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(82,20): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(205,53): warning C4267: “+=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(208,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(245,57): warning C4267: “+=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Engine.cpp(248,74): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Scene.cpp
+  SceneLoader.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\utility(152,1): warning C4267: “初始化”: 从“size_t”转换到“_Ty1”，可能丢失数据
+          with
+          [
+              _Ty1=int
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\SceneLoader.cpp(367): message : 查看对正在编译的函数 模板 实例化“std::pair<int,int>::pair<unsigned __int64,unsigned __int64,0>(_Other1 &&,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Other1=unsigned __int64,
+              _Other2=unsigned __int64
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\SceneLoader.cpp(367): message : 查看对正在编译的函数 模板 实例化“std::pair<int,int>::pair<unsigned __int64,unsigned __int64,0>(_Other1 &&,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Other1=unsigned __int64,
+              _Other2=unsigned __int64
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\utility(152,1): warning C4267: “初始化”: 从“size_t”转换到“_Ty2”，可能丢失数据
+          with
+          [
+              _Ty2=int
+          ]
+  RenderPool.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\RenderPool.cpp(42,55): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  RayTracerIntegrator.cpp
+  DirectIntegrator.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\DirectIntegrator.cpp(125,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  lodepng.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(129,9): warning C4551: 缺少参数列表的函数调用
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(745,54): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(763,35): warning C4267: “=”: 从“size_t”转换到“unsigned short”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(764,39): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(787,37): warning C4267: “=”: 从“size_t”转换到“unsigned short”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(804,38): warning C4267: “=”: 从“size_t”转换到“unsigned short”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(3704,70): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(4667,45): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\lodepng\lodepng.cpp(5402,33): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+  PathTracerIntegrator.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\PathTracerIntegrator.cpp(150,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\PathTracerIntegrator.cpp(232,68): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\PathTracerIntegrator.cpp(359,64): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Material.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Material.cpp(389,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Material.cpp(555,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Material.cpp(646,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  Wavelet.cpp
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.h(40,40): warning C4305: “初始化”: 从“double”到“const float”截断
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.h(41,36): warning C4305: “初始化”: 从“double”到“const float”截断
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(58,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(72,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(98,65): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(101,17): warning C4244: “初始化”: 从“_Tp”转换到“float”，可能丢失数据
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(105,69): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(109,40): warning C4244: “=”: 从“_Tp”转换到“float”，可能丢失数据
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(114,40): warning C4244: “=”: 从“_Tp”转换到“float”，可能丢失数据
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(119,40): warning C4244: “=”: 从“_Tp”转换到“float”，可能丢失数据
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(164,75): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(177,76): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(190,79): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(202,80): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(419,13): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(423,44): warning C4267: “-=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(430,13): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(434,44): warning C4267: “-=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(452,55): warning C4244: “=”: 从“int”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(490,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(496,42): warning C4244: “=”: 从“unsigned __int64”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(563,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(572,18): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\utility(152,16): warning C4244: “初始化”: 从“_Tp”转换到“_Ty1”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+          and
+          [
+              _Ty1=int
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(465): message : 查看对正在编译的函数 模板 实例化“std::pair<int,int>::pair<_Tp&,_Tp&,0>(_Other1,_Other2) noexcept”的引用
+          with
+          [
+              _Tp=float,
+              _Other1=float &,
+              _Other2=float &
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(465): message : 查看对正在编译的函数 模板 实例化“std::pair<int,int>::pair<_Tp&,_Tp&,0>(_Other1,_Other2) noexcept”的引用
+          with
+          [
+              _Tp=float,
+              _Other1=float &,
+              _Other2=float &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\utility(152,1): warning C4244: “初始化”: 从“_Tp”转换到“_Ty2”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+          and
+          [
+              _Ty2=int
+          ]
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(261,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\Wavelet.cpp(538): message : 查看对正在编译的函数 模板 实例化“void Wavelet::IDWT<cv::Vec3f>(cv::Mat_<cv::Vec3f> &,std::vector<std::vector<cv::Mat_<cv::Vec3f>,std::allocator<cv::Mat_<cv::Vec3f>>>,std::allocator<std::vector<cv::Mat_<cv::Vec3f>,std::allocator<cv::Mat_<cv::Vec3f>>>>> &,cv::Mat_<cv::Vec3f> &)”的引用
+  正在生成代码...
+C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\src\SceneLoader.cpp(656): warning C4715: “SceneLoader::createIntegrator”: 不是所有的控件路径都返回值
+  AWR_lib.vcxproj -> C:\Users\唐潮\source\repos\ChaoTang0330\AdaptiveWaveletRendering\build\Release\AWR.lib
