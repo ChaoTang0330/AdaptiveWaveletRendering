@@ -304,7 +304,6 @@ void Wavelet::getMeanVar(std::vector<std::vector<glm::vec3>>& imageData,
 		var_pix(y, x) =
 			((max_val - min_val) * (max_val - min_val)) / ((max_val + min_val) * (max_val + min_val) + EPSILON)
 			/ imageData[i].size();
-		
 	}
 }
 
@@ -328,8 +327,6 @@ void Wavelet::getRGBVar(std::vector<std::vector<glm::vec3>>& imageData,
 			max_val.b = std::max(max_val.b, imageData[i][j].b);
 			min_val.b = std::min(min_val.b, imageData[i][j].b);
 		}
-		max_val = min(max_val, 1.0f);
-		min_val = min(min_val, 1.0f);
 		glm::vec3 var_curr = (max_val - min_val) * (max_val - min_val) / (float)imageData[i].size();
 		var_pix[0](y, x) = var_curr.b;
 		var_pix[1](y, x) = var_curr.g;
@@ -470,15 +467,23 @@ void Wavelet::denoise(std::vector<std::vector<glm::vec3>>& imageData, float gamm
 				[](glm::vec3& a, glm::vec3& b) -> bool
 				{return a.r + a.g + a.b < b.r + b.g + b.b; });
 		imageData[i].erase(it);
-		glm::vec3 avgColor = std::accumulate(imageData[i].begin(), imageData[i].end(), glm::vec3(0));
+
+        //limit max to 1.0 & calculate pixel mean
+		glm::vec3 avgColor(0.0f, 0.0f, 0.0f);
+		for (int j = 0; j < imageData[i].size(); j++) {
+			imageData[i][j].r = min(imageData[i][j].r, 1.0f);
+			imageData[i][j].g = min(imageData[i][j].g, 1.0f);
+			imageData[i][j].b = min(imageData[i][j].b, 1.0f);
+			avgColor += imageData[i][j];
+		}
 		avgColor /= (float)imageData[i].size();
 
 		int x = i % image_size;
 		int y = i / image_size;
 
-		pixMean(y, x)[2] = std::min(avgColor.r, 1.0f);
-		pixMean(y, x)[1] = std::min(avgColor.g, 1.0f);
-		pixMean(y, x)[0] = std::min(avgColor.b, 1.0f);
+		pixMean(y, x)[2] = avgColor.r;
+		pixMean(y, x)[1] = avgColor.g, 1.0f;
+		pixMean(y, x)[0] = avgColor.b, 1.0f;
 
 		samplesDistri(y, x) = imageData[i].size();
 	}
@@ -505,16 +510,12 @@ void Wavelet::denoise(std::vector<std::vector<glm::vec3>>& imageData, float gamm
 				int colStart = ((alpha + 1) >> 1) * (1 << k);
 				int step = 1 << (k + 1);
 				down_sampling<float>(filtered, colStart, rowStart, step, delta);
-				/*cv::Mat_<float> temp = filtered.clone();
-				if(k >= 1) down_sampling<float>(filtered, 0, 0, 1 << k, temp);
-				down_sampling<float>(temp, (alpha + 1) >> 1,
-					(alpha + 1) & 1,
-					2, delta);*/
 				cv::sqrt(delta, delta);
 
 				cv::Mat_<float> sign_w;
 				signMat(coefs_rgb[i], sign_w);
-				coefs_rgb[i] = cv::abs(coefs_rgb[i]) - delta;
+				coefs_rgb[i] = cv::abs(coefs_rgb[i]);
+                coefs_rgb[i] -= delta;
 				cv::max(coefs_rgb[i], 0.0f, coefs_rgb[i]);
 				coefs_rgb[i] = coefs_rgb[i].mul(sign_w);
 			}
@@ -547,8 +548,8 @@ void Wavelet::showResult(std::string fileName)
 	double max;
 	cv::minMaxIdx(samplesDistri, NULL, &max);
 	cv::Mat adjMap;
-	float scale = 255 / (max - 4);
-	samplesDistri.convertTo(adjMap, CV_8UC1, scale, -255 / 4.0);
+	float scale = 255 / max;
+	samplesDistri.convertTo(adjMap, CV_8UC1, scale, 0.0);
 	cv::namedWindow("Sample Distributions", cv::WINDOW_NORMAL);
 	cv::imshow("Sample Distributions", adjMap);
 	cv::waitKey(0);
